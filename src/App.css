@@ -1,38 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #dadada;
+}
+body {
+  background: black;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 .App {
+  margin: 0px 3rem 0px 3rem;
+}
+.percentage {
   text-align: center;
+  padding-top: 20px;
+}
+.CircularProgressbar {
+  max-width: 45%;
+}
+h1 {
+  margin-top: 5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2,
+h3 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans;
+  font-size: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  margin-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.progress {
+  margin-top: 3rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.backgroundBar {
+  margin-top: 2rem;
+  display: inline-block;
+  height: 3rem;
+  width: 100%;
+  background: #707070;
+  border-radius: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.innerBar {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.innerBar span {
+  font-weight: normal;
+  margin-right: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans;
+}
+
+img {
+  max-width: 50%;
+  border-radius: 10rem;
 }
